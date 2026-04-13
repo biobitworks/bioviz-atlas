@@ -1,0 +1,87 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-04-13T07:45:07.900Z",
+  "phase": "00",
+  "phase_name": "ad-hoc-bioviz-atlas",
+  "phase_dir": ".planning/phases/00-ad-hoc-bioviz-atlas",
+  "plan": 1,
+  "task": 3,
+  "total_tasks": 5,
+  "status": "paused",
+  "completed_tasks": [
+    {
+      "id": 1,
+      "name": "Fix canonical identity fallback for plain FASTA headers",
+      "status": "done",
+      "commit": "23a9867"
+    },
+    {
+      "id": 2,
+      "name": "Add OpenAI fast synthesis path and strict JSON schema support",
+      "status": "done",
+      "commit": "23a9867"
+    },
+    {
+      "id": 3,
+      "name": "Verify GLP-1 peptide and GLP1R receptor analysis end to end",
+      "status": "in_progress",
+      "progress": "API flow verified for GLP-1 and GLP1R inputs, including PDF mention extraction, canonical public identifiers, and provenance. Browser-driven demo rerecord and Playwright-based UI validation are still unfinished."
+    }
+  ],
+  "remaining_tasks": [
+    {
+      "id": 4,
+      "name": "Run browser automation against localhost:3000 and capture fresh UI artifacts",
+      "status": "not_started"
+    },
+    {
+      "id": 5,
+      "name": "Rerecord or update the demo asset to reflect the GPT-backed flow",
+      "status": "not_started"
+    }
+  ],
+  "blockers": [
+    {
+      "description": "Playwright CLI is present, but module-style automation from this repo failed because the repo does not expose the Playwright package in the execution path used during the check.",
+      "type": "technical",
+      "workaround": "Use the Codex Playwright wrapper CLI directly, or install/resolve Playwright in the repo before attempting scripted UI recording."
+    }
+  ],
+  "human_actions_pending": [
+    {
+      "action": "Decide whether to install/repair Playwright in the repo or proceed with manual browser recording from localhost:3000.",
+      "context": "Backend verification is complete; the remaining gap is a fresh browser-verified demo asset.",
+      "blocking": true
+    }
+  ],
+  "decisions": [
+    {
+      "decision": "Prefer OpenAI gpt-4.1-mini as the fast synthesis path ahead of Gemini and local Ollama.",
+      "rationale": "The environment already had OPENAI_API_KEY set and the user explicitly asked for a GPT path that behaves more like Gemini Flash.",
+      "phase": "00"
+    },
+    {
+      "decision": "Keep deterministic identity, links, paper mentions, and provenance hydration after model synthesis.",
+      "rationale": "The model sometimes omitted deterministic fields; merging them back preserves demo reliability and keeps the public-safe provenance path intact.",
+      "phase": "00"
+    },
+    {
+      "decision": "Seed a public-safe canonical fallback for GLP-1 peptide inputs via UniProt P01275 / GCG.",
+      "rationale": "The original demo header lacked an accession and was producing empty canonical data, which was breaking the submission narrative.",
+      "phase": "00"
+    }
+  ],
+  "uncommitted_files": [
+    "index.html",
+    "server.ts",
+    "src/App.tsx",
+    "src/lib/analysis.ts",
+    "src/lib/protein-resolver.ts",
+    "src/lib/schema.ts",
+    ".playwright-cli/",
+    "output/",
+    "playwright-cli.json"
+  ],
+  "next_action": "Resume by using the Playwright wrapper skill against http://localhost:3000, submit the GLP1R FASTA plus paper through the UI, save a screenshot/video artifact under output/playwright/, and then rerecord the 1-minute demo if the browser result looks clean.",
+  "context_notes": "The server is currently running on localhost:3000 from npm run dev. API verification is solid: GLP-1 now resolves to GCG/P01275 and GLP1R resolves to P43220 with paper mentions and provenance. The remaining uncertainty is strictly in browser automation and final demo asset refresh, not in the backend analysis path."
+}
