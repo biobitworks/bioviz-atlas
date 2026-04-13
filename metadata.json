@@ -1,0 +1,5 @@
+{
+  "name": "BioViz Atlas",
+  "description": "A provenance-first biological interpretation engine for protein sequences and research papers.",
+  "requestFramePermissions": []
+}
