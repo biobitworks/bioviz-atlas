@@ -1,0 +1,37 @@
+{
+  "chains": {
+    "EXP-1.1": {
+      "current_stage": "EXP",
+      "exp_id": "EXP-1.1",
+      "history": [
+        {
+          "artifact_id": "TASK-1.1",
+          "metadata": {},
+          "stage": "TASK",
+          "timestamp": "2026-04-13T08:30:53.230983+00:00"
+        },
+        {
+          "artifact_id": "PROMPT-1.1",
+          "metadata": {},
+          "stage": "PROMPT",
+          "timestamp": "2026-04-13T08:30:53.231184+00:00"
+        },
+        {
+          "artifact_id": "EXP-1.1",
+          "metadata": {},
+          "stage": "EXP",
+          "timestamp": "2026-04-13T08:30:53.231766+00:00"
+        }
+      ],
+      "lab_notebook_entry": null,
+      "prompt_id": "PROMPT-1.1",
+      "rem_id": null,
+      "results_id": null,
+      "rt_id": null,
+      "task_id": "TASK-1.1",
+      "terminal_state": null
+    }
+  },
+  "schema_version": 1,
+  "updated_at": "2026-04-13T08:30:53.231826+00:00"
+}

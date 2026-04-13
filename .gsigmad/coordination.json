@@ -1,0 +1,18 @@
+{
+  "coordinate": {
+    "milestone": 1,
+    "phase": 1,
+    "version": 1,
+    "wave": 1
+  },
+  "rerun_counters": {},
+  "schema_version": 1,
+  "track_counters": {
+    "EXP": 1,
+    "PROMPT": 1,
+    "REM": 0,
+    "RT": 0,
+    "TASK": 1
+  },
+  "updated_at": "2026-04-13T08:30:53.215053+00:00"
+}
