@@ -172,7 +172,7 @@ export default function App() {
                 <div className="space-y-2 max-w-sm">
                   <p className="text-sm text-slate-500 animate-pulse">Running local heuristics...</p>
                   <p className="text-sm text-slate-500 animate-pulse delay-75">Resolving protein identity...</p>
-                  <p className="text-sm text-slate-500 animate-pulse delay-150">Querying Gemini 1.5 Flash...</p>
+                  <p className="text-sm text-slate-500 animate-pulse delay-150">Synthesizing report...</p>
                 </div>
               </div>
             )}
