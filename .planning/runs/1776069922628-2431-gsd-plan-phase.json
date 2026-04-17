@@ -1,0 +1,53 @@
+{
+  "skill_name": "gsd-plan-phase",
+  "skill_path": "/Users/byron/.codex/skills/gsd-plan-phase/SKILL.md",
+  "skill_args": [
+    "1"
+  ],
+  "cwd": "/Users/byron/projects/active/bioviz-atlas",
+  "project_root": "/Users/byron/projects/active/bioviz-atlas",
+  "started_at": "2026-04-13T08:45:22.625Z",
+  "execution_context_refs": [
+    "$HOME/.codex/get-shit-done/workflows/plan-phase.md",
+    "$HOME/.codex/get-shit-done/references/ui-brand.md"
+  ],
+  "execution_context_paths": [
+    "/Users/byron/.codex/get-shit-done/workflows/plan-phase.md",
+    "/Users/byron/.codex/get-shit-done/references/ui-brand.md"
+  ],
+  "missing_execution_context_paths": [],
+  "preflight": {
+    "planning_exists": true,
+    "roadmap_exists": true,
+    "config_exists": true,
+    "skill_enforcement": true
+  },
+  "expected_outputs": [
+    ".planning/phases/01-replayable-run-capture/01-RESEARCH.md"
+  ],
+  "expected_output_patterns": [
+    ".planning/phases/01-replayable-run-capture/01-*-PLAN.md"
+  ],
+  "warnings": [
+    "phase has no CONTEXT.md; discuss/context capture may be required before planning"
+  ],
+  "phase": {
+    "phase_number": "01",
+    "phase_name": "Replayable Run Capture",
+    "phase_slug": "replayable-run-capture",
+    "phase_dir": ".planning/phases/01-replayable-run-capture",
+    "existing": null
+  },
+  "status": "completed",
+  "run_id": "1776069922628-2431-gsd-plan-phase",
+  "manifest_path": ".planning/runs/1776069922628-2431-gsd-plan-phase.json",
+  "finished_at": "2026-04-13T08:49:24.540Z",
+  "notes": null,
+  "validated_outputs": [
+    ".planning/phases/01-replayable-run-capture/01-01-PLAN.md",
+    ".planning/phases/01-replayable-run-capture/01-02-PLAN.md",
+    ".planning/phases/01-replayable-run-capture/01-03-PLAN.md",
+    ".planning/phases/01-replayable-run-capture/01-RESEARCH.md"
+  ],
+  "finish_errors": []
+}
