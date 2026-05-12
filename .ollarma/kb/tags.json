@@ -1,0 +1,57 @@
+{
+  "doc:410505b80dca87363a035eff04a07162beb29216ddb8bd332475ac1568f316f2": [
+    "authority:canonical",
+    "ext:md",
+    "kind:workflow",
+    "role:docs",
+    "topdir:.planning"
+  ],
+  "doc:5a087255b9af63b550ed063cbdabda7d5375ec81461f296ad6e25fb90b2d2162": [
+    "authority:canonical",
+    "ext:md",
+    "kind:workflow",
+    "role:docs",
+    "topdir:.planning"
+  ],
+  "doc:5dd31c735a1416e695f7b73b9594753ddc253c5cb88d0ab5adcd979d188f97b3": [
+    "authority:canonical",
+    "ext:md",
+    "kind:documents",
+    "role:docs",
+    "topdir:README.md"
+  ],
+  "doc:67033fdf2bfac52334db5ef054774b830eab924e5d3e69d3959ca97c8db03f2d": [
+    "authority:canonical",
+    "ext:md",
+    "kind:notes",
+    "role:docs",
+    "topdir:LAB_NOTEBOOK.md"
+  ],
+  "doc:8b8b4c9d7990c5f842dc83e7ce4c2f35394212e27e28278c9107b8bde2676f25": [
+    "authority:canonical",
+    "ext:md",
+    "kind:workflow",
+    "role:docs",
+    "topdir:.planning"
+  ],
+  "doc:91a6f0e3e9e1b7c5795bff6d39813c945a6ebeb81727dbfc30b009830cfbac9f": [
+    "authority:canonical",
+    "ext:md",
+    "kind:documents",
+    "role:docs",
+    "topdir:CANON.md"
+  ],
+  "doc:aed6d9a41a45fe8d7c89963a09f2d95393815ad6f11bf6aad052ae540511c042": [
+    "authority:reference",
+    "ext:json",
+    "kind:structured_snapshot",
+    "topdir:.planning"
+  ],
+  "doc:b95c1f8c53003c5ae4e18ec166ec97afb7e2eeaac8de975e1ad595b498c0b048": [
+    "authority:canonical",
+    "ext:md",
+    "kind:workflow",
+    "role:docs",
+    "topdir:.planning"
+  ]
+}

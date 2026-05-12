@@ -1,0 +1,12 @@
+{
+  "artifact_root": ".ollarma/kb",
+  "chunk_count": 31,
+  "chunk_set_hash": "sha256:23ad7ede949f5c3c2ecbbc6e91729977d0f31fa97458dfc08ae2eeff9f5a417a",
+  "document_count": 8,
+  "document_set_hash": "sha256:bc76cc63a1df06d09e9e30772a9f5503e0a1701ffb7fa2e4005add4ae211d422",
+  "freshness_hours": 48,
+  "project": "bioviz-atlas",
+  "schema_version": "1",
+  "source_count": 8,
+  "stale_behavior": "escalate"
+}
